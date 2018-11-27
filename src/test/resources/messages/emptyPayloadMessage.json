@@ -1,0 +1,21 @@
+{
+  "@graph" : [ {
+    "@id" : "InterIoT:message/meta/966b1c1d-8ca9-4cac-b995-aedd16a8b62e",
+    "conversationID" : "conv1b105eeb-e2e1-414e-b2ae-d49edc098162",
+    "dateTimeStamp" : "2017-11-20T17:45:58.835+02:00",
+    "messageID" : "msgce817f2c-2886-470f-8895-d3c14e74a2f7",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : {
+      "@id" : "InterIoT:message/meta"
+    }
+  } ],
+  "@id" : "InterIoT:message/metadata",
+  "@context" : {
+    "@base" : "http://inter-iot.eu/message/",
+    "iiotex" : "http://inter-iot.eu/GOIoTPex#",
+    "geosparql" : "http://www.opengis.net/ont/geosparql#",
+    "iiot" : "http://inter-iot.eu/GOIoTP#",
+    "InterIoT" : "http://inter-iot.eu/",
+    "ssn" : "http://www.w3.org/ns/ssn/",
+    "sosa" : "http://www.w3.org/ns/sosa/"
+  }
+}
