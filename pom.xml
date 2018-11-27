@@ -45,7 +45,7 @@ limitations under the License.
 
     <groupId>eu.inter-iot.message</groupId>
     <artifactId>Message</artifactId>
-    <version>0.5-SNAPSHOT</version>
+    <version>0.5</version>
 
     <name>Message</name>
     <description>Messaging library for INTER-MW, part of INTER-IoT EU H2020 Project</description>
