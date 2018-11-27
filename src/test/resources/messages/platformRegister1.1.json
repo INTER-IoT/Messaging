@@ -1,0 +1,148 @@
+{
+  "@graph": [
+    {
+      "@graph": [
+        {
+          "@id": "meta/addecd4d-4269-465c-903d-f0eace2bef3c",
+          "@type": [
+            "meta",
+            "Platform_register"
+          ],
+          "SenderPlatformId": {
+            "@id": "http://om2m.org/myPlatform"
+          },
+          "conversationID": "conv506c38b5-4ca4-47c3-96b8-1a69f3ca9aba",
+          "dateTimeStamp": "2018-04-10T15:18:06.665+01:00",
+          "messageID": "msg06494427-76bb-4ade-8be7-2daaa0d61aa1"
+        }
+      ],
+      "@id": "metadata"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://om2m.org/myPlatform",
+          "@type": [
+            "sosa:Platform",
+            "iiot:SoftwarePlatform",
+            "iiot:Middleware",
+            "iiotex:OneM2M",
+            "http://myhost.org/ontology/RESTPlatform"
+          ],
+          "iiot:iiot:hasName": "Example OM2M platform",
+          "iiot:hasDefaultInterface": {
+            "@id": "_:n10"
+          },
+          "iiot:hasSemantics": [
+            {
+              "@id": "http://om2m.org/base_ontology_3.6.0"
+            },
+            {
+              "@id": "_:n1"
+            }
+          ],
+          "iiot:hasCoverage": {
+            "@id": "_:n0"
+          }
+        },
+        {
+          "@id": "_:n10",
+          "@type": [
+            "iiot:ServiceInterface",
+            "iiotex:REST"
+          ],
+          "iiot:hasServiceInput": {
+            "@id": "_:n11"
+          },
+          "iiot:hasServiceDefinition": "http://public.om2m.myhost.org:8888/rest/swagger/"
+        },
+        {
+          "@id": "_:n11",
+          "@type": "iiot:ServiceInput",
+          "iiot:hasBaseEndpoint": "http://public.om2m.myhost.org:8888/rest/"
+        },
+        {
+          "@id": "http://om2m.org/base_ontology_3.6.0",
+          "@type": "iiot:Ontology",
+          "iiot:hasURI": "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl",
+          "iiot:hasVersion": "3.6.0"
+        },
+        {
+          "@id": "_:n1",
+          "@type": [
+            "iiot:Semantics",
+            "mw:IPSMBridgeSemantics"
+          ],
+          "mw:hasDownstreamChannelConfig": {
+            "@id": "_:n20"
+          },
+          "mw:hasUpstreamChannelConfig": {
+            "@id": "_:n40"
+          }
+        },
+        {
+          "@id": "_:n20",
+          "@type": "mw:IPSMChannelConfig",
+          "mw:hasInputAlignment": {
+            "@id": "_:n21"
+          },
+          "mw:hasOutputAlignment": {
+            "@id": "_:n22"
+          }
+        },
+        {
+          "@id": "_:n40",
+          "@type": "mw:IPSMChannelConfig",
+          "mw:hasInputAlignment": {
+            "@id": "_:n41"
+          },
+          "mw:hasOutputAlignment": {
+            "@id": "_:n42"
+          }
+        },
+        {
+          "@id": "_:n21",
+          "@type": "mw:IPSMAlignment",
+          "iiot:hasName": "IDENTITY"
+        },
+        {
+          "@id": "_:n22",
+          "@type": "mw:IPSMAlignment",
+          "iiot:hasName": "CO-OM2M_BO",
+          "iiot:hasVersion": "1.2partial"
+        },
+        {
+          "@id": "_:n41",
+          "@type": "mw:IPSMAlignment",
+          "iiot:hasName": "OM2M_BO-CO",
+          "iiot:hasVersion": "1.2"
+        },
+        {
+          "@id": "_:n42",
+          "@type": "mw:IPSMAlignment",
+          "iiot:hasName": "IDENTITY"
+        },
+        {
+          "@id": "_:n0",
+          "@type": [
+            "iiot:Location",
+            "geosparql:Geometry"
+          ],
+          "geosparql:asWKT": {
+            "@type": "geosparql:wktLiteral",
+            "@value": "POLYGON((46.9809 11.9221, 46.9702 11.9299, 46.8717 11.638, 46.9876 11.8250, 46.9916 11.7251))"
+          }
+        }
+      ],
+      "@id": "payload"
+    }
+  ],
+  "@context": {
+    "@base": "http://inter-iot.eu/message/",
+    "InterIoT": "http://inter-iot.eu/",
+    "iiot": "http://inter-iot.eu/GOIoTP#",
+    "iiotex": "http://inter-iot.eu/GOIoTPex#",
+    "mw": "http://inter-iot.eu/INTERMW#",
+    "sosa": "http://www.w3.org/ns/sosa/"
+  }
+}
